@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Solutions</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            /* overflow-y: hidden; */
+        }
+
+        header {
+            background: url('./imagenes/header.jpg') center/cover no-repeat;
+            scale: 1;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            width: 100%;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 50px;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        section:nth-child(even) {
+            background-color: #e0e0e0;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media only screen and (max-width: 600px) {
+            body {
+                margin: 0;
+                padding: 0;
+                /* overflow-y: hidden; */
+            }
+
+            header {
+                height: 200px;
+                font-size: 24px;
+            }
+
+            section {
+                padding: 30px;
+            }
+
+            form {
+                padding: 15px;
+            }
+        }
+
+        @media only screen and (max-width: 375px) {
+            header {
+                height: 150px;
+                font-size: 20px;
+            }
+
+            section {
+                padding: 20px;
+            }
+
+            form {
+                padding: 10px;
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            section.extra-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            section.extra-section img,
+            section.extra-section div {
+                max-width: 100%;
+            }
+        }
+
+        section.extra-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+            background-color: #f0f0f0;
+            padding: 50px;
+        }
+
+        section.extra-section img {
+            max-width: 45%;
+            border-radius: 5px;
+        }
+
+        section.extra-section div {
+            max-width: 45%;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Corporativo Arrod</h1>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#areas-especializacion">Áreas de Especialización</a>
+        <a href="#servicios-destacados">Servicios Destacados</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <section id="inicio">
+        <h2>Inicio</h2>
+        <p>Bienvenido a Corporativo Arrod, tu socio confiable en.....</p>
+    </section>
+
+    <section id="areas-especializacion">
+        <h2>Áreas de Especialización</h2>
+        <p>Lorem ipsum dolor.</p>
+        <img src="https://images.pexels.com/photos/443399/pexels-photo-443399.jpeg" alt="Áreas de Especialización">
+    </section>
+
+    <section id="servicios-destacados">
+        <h2>Servicios Destacados</h2>
+        <p>Ofrecemos una amplia gama de servicios legales, desde asesoramiento jurídico hasta representación en juicios. Nuestro compromiso es brindar soluciones efectivas y éticas.</p>
+        <img src="./imagenes/1.webp" alt="Servicios Destacados">
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>¿Necesitas asesoramiento legal o tienes alguna pregunta? Completa el formulario a continuación y nos pondremos en contacto contigo lo antes posible.</p>
+        <form action="mailto:eltaquero@hotmail.com" method="post" enctype="text/plain">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <section class="extra-section">
+        <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg" alt="Imagen 1">
+        <div>
+            <h2>Sección Adicional 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida arcu a risus tincidunt, a bibendum nisl eleifend.</p>
+        </div>
+    </section>
+
+    <section class="extra-section">
+        <div>
+            <h2>Sección Adicional 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida arcu a risus tincidunt, a bibendum nisl eleifend.</p>
+        </div>
+        <img src="https://images.pexels.com/photos/3182742/pexels-photo-3182742.jpeg" alt="Imagen 2">
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Legal Solutions. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
